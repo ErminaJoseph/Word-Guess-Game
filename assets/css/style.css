@@ -1,7 +1,19 @@
 body {
-    font-family: 'Fredoka One', cursive;
-    text-align: center;
-    color: #f0ffff;
+    background: #050406;
+    margin: 0 auto;
+}
+
+header {
+    color: #5a6a66;
     border-style: dotted;
     border-width: 10px;
+    border-color: #7199ae;
+    background: #050406;
+}
+
+.container {
+    color: #5a6a66;
+    background: #050406;
+    border-color: #7199ae;
+    width: 100%;
 }
