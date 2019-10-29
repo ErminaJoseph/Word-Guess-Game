@@ -7,24 +7,120 @@
     <title>Word Guess Game!</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
     <script src="assets/javascript/game.js"></script>
 </head>
 <body>
+    <br>
+    <header class="row">
+        <h1 class="col-md-6 offset-md-2"> Word Guessing Game: HBO Edition</h1> 
+        <img class="col-md-2" src="assets/images/HBO-logo.JPG">
+    </header>
+    <hr>
 
-    <div>
-        <p id="letter-e"></p> <p id="letter-u"></p> <p id="letter-p"></p> <p id="letter-h"></p> <p 4id="letter-o"></p> <p id="letter-r"></p> <p id="letter-i"></p> <p id="letter-a"></p>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 offset-md-2">
+                <p id="letter-e"></p> 
+            </div>
+            <div class="col-md-1">
+                <p id="letter-u"></p> 
+            </div>
+            <div class="col-md-1">
+                <p id="letter-p"></p> 
+            </div>
+            <div class="col-md-1">
+                <p id="letter-h"></p> 
+            </div>
+            <div class="col-md-1">
+                <p id="letter-o"></p>
+            </div>
+            <div class="col-md-1">
+                <p id="letter-r"></p>  
+            </div>
+            <div class="col-md-1">
+                <p id="letter-i"></p>
+            </div>
+            <div class="col-md-1">
+                <p id="letter-a"></p>
+            </div>    
+        </div>
+
+        <div class="row">
+            <div class="col-md-1 offset-md-2">
+                <p>_</p> 
+            </div>
+            <div class="col-md-1">
+                <p>_</p> 
+            </div>
+            <div class="col-md-1">
+                <p>_</p> 
+            </div>
+            <div class="col-md-1">
+                <p>_</p> 
+            </div>
+            <div class="col-md-1">
+                <p>_</p>
+            </div>
+            <div class="col-md-1">
+                <p>_</p>  
+            </div>
+            <div class="col-md-1">
+                <p>_</p>
+            </div>
+            <div class="col-md-1">
+                <p>_</p>
+            </div>    
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-4">
+                <h3>Guesses Left:</h3>
+            </div>
+
+            <div class="col-md-1">
+                <h3 id="guesses-left"></h3>
+            </div>
+
+            <div class="col-md-3">
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-md-8 offset-md-4">
+                <h3>Letters Used:</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+
+            <div class="col-md-4">
+                <p id="letters-used"></p>
+            </div>
+
+            <div class="col-md-4">
+            </div>
+        </div>
     </div>
 
-    <div>
-        <h3>Number of Guesses Left:</h3>
-        <p id="guesses-left"></p>
-    </div>
-
-    <div>
-        <h3>Letters Used:</h3>
-        <p id="letters-used"></p>
-    </div>
-
+    <br>
+    
 
 </body>
 </html>
