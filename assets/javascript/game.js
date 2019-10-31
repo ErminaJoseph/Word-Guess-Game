@@ -1,9 +1,13 @@
 var theWord = ["e", "u", "p", "h", "o", "r", "i", "a"];
 var wins = 0;
 var numberOfGuesses = 20;
+var lettersStorage = [];
  
 document.onkeyup = function(event) {
     var userChoice = event.key;
+
+    var getStarted = document.getElementById("get-started");
+    getStarted.textContent = "";
 
     if (userChoice === "e") {
         var chosenLetterE = document.getElementById("letter-e");
@@ -31,9 +35,12 @@ document.onkeyup = function(event) {
         chosenLetterA.textContent = theWord[7].toUpperCase()
     } else {
         numberOfGuesses--;
-        var guessesText = document.getElementById("guesses-left");
-        var letterText = document.getElementById("letters-used");
-        guessesText.textContent = numberOfGuesses;
-        letterText.textContent = userChoice.toUpperCase();
+        lettersStorage.push(userChoice);
+        for (var i = 0; i < 21; i++) {
+            var guessesText = document.getElementById("guesses-left");
+            var letterText = document.getElementById("letters-used");
+            guessesText.textContent = numberOfGuesses;
+            letterText.textContent = lettersStorage[i].toUpperCase();
+        }
     }
 };
