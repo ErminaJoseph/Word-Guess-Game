@@ -6,8 +6,19 @@ var selectedWord = theWords[Math.floor(Math.random() * theWords.length)];
 var splitWord = selectedWord.split("");
 
 
+
+
+
 document.onkeyup = function(event) {
     var userChoice = event.key;  
+
+    for (var i = 0; i < splitWord.length; i++) {
+        if (userChoice === splitWord[i].charAt(0)) {
+            console.log(splitWord[i]);
+        }
+    }
+    
+    
 
     
     
