@@ -1,46 +1,16 @@
-var theWord = ["e", "u", "p", "h", "o", "r", "i", "a"];
+var theWords = ["euphoria", "insecure", "gameofthrones", "ballers", "watchmen", "vice", "siliconvalley"];
 var wins = 0;
+var lettersGuessed = [];
 var numberOfGuesses = 20;
-var lettersStorage = [];
- 
+var selectedWord = theWords[Math.floor(Math.random() * theWords.length)];
+var splitWord = selectedWord.split("");
+
+
 document.onkeyup = function(event) {
-    var userChoice = event.key;
+    var userChoice = event.key;  
 
-    var getStarted = document.getElementById("get-started");
-    getStarted.textContent = "";
+    
+    
 
-    if (userChoice === "e") {
-        var chosenLetterE = document.getElementById("letter-e");
-        chosenLetterE.textContent = theWord[0].toUpperCase();
-    } else if (userChoice === "u") {
-        var chosenLetterU = document.getElementById("letter-u");
-        chosenLetterU.textContent = theWord[1].toUpperCase();
-    } else if (userChoice === "p") {
-        var chosenLetterP = document.getElementById("letter-p");
-        chosenLetterP.textContent = theWord[2].toUpperCase();
-    } else if (userChoice === "h") {
-        var chosenLetterH = document.getElementById("letter-h");
-        chosenLetterH.textContent = theWord[3].toUpperCase();
-    } else if (userChoice === "o") {
-        var chosenLetterO = document.getElementById("letter-o");
-        chosenLetterO.textContent = theWord[4].toUpperCase();
-    } else if (userChoice === "r") {
-        var chosenLetterR = document.getElementById("letter-r");
-        chosenLetterR.textContent = theWord[5].toUpperCase();
-    } else if (userChoice === "i") {
-        var chosenLetterI = document.getElementById("letter-i");
-        chosenLetterI.textContent = theWord[6].toUpperCase();
-    } else if (userChoice === "a") {
-        var chosenLetterA = document.getElementById("letter-a");
-        chosenLetterA.textContent = theWord[7].toUpperCase()
-    } else {
-        numberOfGuesses--;
-        lettersStorage.push(userChoice);
-        for (var i = 0; i < 21; i++) {
-            var guessesText = document.getElementById("guesses-left");
-            var letterText = document.getElementById("letters-used");
-            guessesText.textContent = numberOfGuesses;
-            letterText.textContent = lettersStorage[i].toUpperCase();
-        }
-    }
-};
+}
+
